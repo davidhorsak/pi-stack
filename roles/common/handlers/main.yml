@@ -5,3 +5,7 @@
 - name: restart ntp
   service: name=ntp state=restarted
   become: yes
+
+- name: stop ntp
+  service: name=npt state=stopped
+  become: yes
