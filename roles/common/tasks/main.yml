@@ -2,3 +2,4 @@
 # This playbook contains common plays that will be run on all nodes.
 
 - include: ntp.yml
+- include: nginx.yml
