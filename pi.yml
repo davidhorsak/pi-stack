@@ -4,6 +4,9 @@
 - name: Apply common configuration to all nodes
   hosts: all
   remote_user: pi
+  become: yes
+  become_user: root
 
   roles:
     - common
+    - ruby
